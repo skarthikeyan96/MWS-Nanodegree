@@ -1,0 +1,17 @@
+{
+  "name": "mws-stage-3",
+  "version": "1.0.0",
+  "description": "Mobile Web Specialist Stage 3 Application",
+  "main": "main.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "karthikeyan",
+  "license": "MIT"
+}

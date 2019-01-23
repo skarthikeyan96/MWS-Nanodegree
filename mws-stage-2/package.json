@@ -1,0 +1,32 @@
+{
+  "name": "mws-stage-2",
+  "version": "1.0.0",
+  "description": "---\r ## Project Overview: Stage 2",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skarthikeyan96/mws-stage-2.git"
+  },
+  "keywords": [],
+  "author": "Karthikeyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skarthikeyan96/mws-stage-2/issues"
+  },
+  "homepage": "https://github.com/skarthikeyan96/mws-stage-2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}

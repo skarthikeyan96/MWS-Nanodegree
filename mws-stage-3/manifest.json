@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Reviews",
+  "short_name": "Reviews",
+  "description": "Reviews about some of the Restaurant in USA",
+  "start_url": ".",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display":"fullscreen",
+  "icons": [{
+    "src": "mainfest-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+    "src": "mainfest-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

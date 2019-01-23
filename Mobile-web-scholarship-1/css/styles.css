@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', serif, sans-serif;
+    padding: 0;
+}
+
+header {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: grid;
+    background-color: #2C3E50;
+    justify-content: center;
+    font-size: 1em;
+    width: 100%;
+    max-width: 100%;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+
+i.fas.fa-utensils {
+    color: white;
+}
+
+div#map {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+/* filter options */
+
+.filter-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#neighborhoods-select,
+#cuisines-select {
+    height: 40px;
+    border-radius: 6px;
+    font-family: Roboto Condensed;
+    font-size: 1em;
+}
+
+.filter-options h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+
+
+
+
+/* List */
+
+#restaurants-list {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+    margin: 10px;
+    padding-left: 0;
+}
+
+.restaurant-img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#restaurants-list li {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: center;
+}
+
+#restaurants-list h1 {
+    margin: 10px;
+    font-size: 1.5em;
+    font-family: Roboto Condensed, sans-serif;
+}
+
+#restaurants-list a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #7C410E;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 30px auto 10px auto;
+    box-sizing: border-box;
+}
+
+#footer {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Roboto Condensed;
+}
+
+#footer a {
+    text-decoration: none;
+    /* color: #000; */
+}
+
+#breadcrumb {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-family: Roboto Condensed;
+}
+
+#breadcrumb li {
+    list-style-type: none;
+}
+
+#breadcrumb a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#breadcrumb li+li:before {
+    padding: 8px;
+    color: #fff;
+    content: "/\00a0";
+}
+
+#maincontent {
+    display: flex;
+    flex-direction: column;
+}
+
+#restaurant-container {
+    order: -1;
+    display: grid;
+    /* flex-direction: column; */
+}
+
+#restaurant-name {
+    font-family: Roboto Condensed;
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.restaurant-img {
+    max-width: 100%;
+    width: 100%;
+    order: -1;
+}
+
+#restaurant-cuisine {
+    margin: 10px;
+    font-family: Roboto Condensed;
+    display: flex;
+    justify-content: center;
+}
+
+#restaurant-address {
+    font-family: Roboto Condensed;
+    margin: 10px;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+#restaurant-hours {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    font-family: Roboto Condensed;
+    margin: auto;
+}
+
+table th,
+table td:nth-child(1),
+table th,
+table td:nth-child(2) {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table th,
+table td:nth-child(1) {
+    text-align: left;
+}
+
+table th,
+table td:nth-child(2) {
+    text-align: center;
+}
+
+#reviews-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#reviews-container h2 {
+    font-family: Roboto Condensed;
+    /* justify-content: center; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: center;
+    margin: auto;
+    padding: 9px;
+    /* margin-top: 1em; */
+}
+
+#reviews-list {
+    list-style-type: none;
+    font-family: Roboto Condensed;
+    padding: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+#reviews-list li {
+    text-align: justify;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.fas.fa-user-alt {
+    margin-right: 10px;
+}
+
+.fas.fa-calendar-alt {
+    margin-right: 10px;
+}
+
+.fas.fa-map-marker-alt {
+    margin-right: 10px;
+}
+.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+.skip-main:focus, .skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+    box-sizing:border-box;
+}
+   
+@media (min-width: 600px) {
+
+    header {
+        font-size: 1em;
+    }
+    .filter-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .filter-options h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #banner {
+        max-width: 100%;
+    }
+    #restaurant-container {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        font-size: 0.95em;
+    }
+    table th,
+    table td:nth-child(1),
+    table th,
+    table td:nth-child(2) {
+        padding: 8px;
+        vertical-align: top;
+        border-left: 1px solid #dee2e6;
+        border-top: 1px solid #dee2e6;
+    }
+    table th,
+    table td:nth-child(2) {
+        text-align: center;
+        border-right: 1px solid #dee2e6;
+    }
+    table tr:last-child td:nth-child(1),
+    table tr:last-child td:nth-child(2) {
+        border-bottom: 1px solid #dee2e6;
+    }
+    #map-container {
+        order: 0;
+    }
+    #map {
+    height: 30vh;
+    max-width: 100%;
+    }
+    #reviews-container {
+        order: 3;
+    }
+
+    #restaurant-container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 85%;
+        order: 1;
+    }
+    #restaurant-hours {
+        width: 50%;
+        order: 6;
+        table-layout: fixed;
+    }
+    #restaurant-name,
+    #restaurant-cuisine,
+    #restaurant-address {
+        width: 50%;
+    }
+    #restaurant-cuisine {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    #restaurant-name {
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+    #banner {
+        width: 45%;
+        padding: 10px;
+        order: 4;
+        box-sizing: border-box;
+    }
+    #restaurant-address {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        font-size: 0.85em;
+    }
+    table th,
+    table td:nth-child(1),
+    table th,
+    table td:nth-child(2) {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-left: 1px solid #dee2e6;
+        border-top: 1px solid #dee2e6;
+    }
+    table th,
+    table td:nth-child(2) {
+        text-align: center;
+        border-right: 1px solid #dee2e6;
+    }
+    table tr:last-child td:nth-child(1),
+    table tr:last-child td:nth-child(2) {
+        border-bottom: 1px solid #dee2e6;
+    }
+    #restaurant-container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 800px;
+    }
+    #restaurant-hours {
+        width: 100%;
+        order: 5;
+        margin: 0;
+    }
+    #restaurant-name,
+    #restaurant-cuisine,
+    #restaurant-address {
+        width: 50%;
+    }
+    #restaurant-cuisine {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    #restaurant-name {
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+    #banner {
+        width: 100%;
+        order: 4;
+    }
+    #restaurant-address {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+    #reviews-list {
+        list-style-type: none;
+        font-family: Roboto Condensed;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        width: 800px;
+    }
+}
