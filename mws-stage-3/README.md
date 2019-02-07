@@ -8,11 +8,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- [skarthikeyan96/mws-restaurant-stage-2](https://github.com/skarthikeyan96/mws-restaurant-stage-3)
+- [skarthikeyan96/mws-restaurant-stage-3](https://gitlab.com/arrow_996/mws-restaurant-stage-3)
 
 ### Installing
 
-1. Download the [server](https://github.com/skarthikeyan96/mws-restaurant-stage-3)
+1. Download the [server](https://gitlab.com/arrow_996/mws-restaurant-stage-3)
 2. install the dependencies using `npm install`
 3. Start server by running `node app.js` on root folder of server.
 3. Download this repo.
