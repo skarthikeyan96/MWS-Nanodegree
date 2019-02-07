@@ -23,4 +23,4 @@ These instructions will get you a copy of the project up and running on your loc
 
 ![First Screen](first.png)
 ![Second Screen](second.png)
-![Third Screen](Third.png)
+![Third Screen](third.png)
