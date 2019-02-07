@@ -19,4 +19,8 @@ These instructions will get you a copy of the project up and running on your loc
 4. Use WebServer for Chrome or Start python2 server by running `python -m SimpleHTTPServer 8080` on project root folder.
 5. Navigate to `localhost:8080` to view the app.
 
+### Screenshots
 
+![First Screen](first.png)
+![Second Screen](second.png)
+![Third Screen](Third.png)
